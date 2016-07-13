@@ -59,9 +59,7 @@ gulp.task('sass', function() { // Создаем таск Sass
     var processors = [
         assets,
         short,
-        fontmagic({
-            async: 'app/js/fontloader.js'
-        }),
+        fontmagic,
         fixes,
         autoprefixer(['last 5 versions', '> 5%', 'ie 8', 'ie 7'], {
             cascade: true
@@ -76,7 +74,8 @@ gulp.task('sass', function() { // Создаем таск Sass
         cssnano
     ];
     return gulp.src('app/sass/**/*.scss')
-        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(sourcemaps.init())        
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(rename({
@@ -84,6 +83,7 @@ gulp.task('sass', function() { // Создаем таск Sass
             extname: ".css"
         }))
         .pipe(sourcemaps.write('.', { sourceRoot: 'css-source' }))
+        .pipe(plumber.stop())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
@@ -132,7 +132,7 @@ gulp.task('extend', function () {
 gulp.task('watch', ['browser-sync', 'compress'], function() {
     gulp.watch('app/img/**/*', ['img']);
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-    gulp.watch(['./app/html/*.html'], ['extend']);
+    gulp.watch(['app/html/*.html'], ['extend']);
     gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/*', function() {
        gulp.run('compress');

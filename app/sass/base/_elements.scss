@@ -1,0 +1,14 @@
+.btn {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 15px;
+	outline: none;
+	@include transition(.3s);
+	cursor: pointer;
+	&_orange {
+		background-color: $orange;
+		&:hover {
+			background-color: darken($orange, 10%);
+		}
+	}
+}
