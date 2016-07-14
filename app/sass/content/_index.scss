@@ -451,7 +451,11 @@
 		&__content {
 			float: left;
 			margin: 0 -10px;
-			
+			display: flex;
+			/* width: 100%; */
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
 			-webkit-justify-content: flex-start;
 			        justify-content: flex-start;
 			
@@ -612,7 +616,78 @@
 			}
 		}
 	}
-	
+	&-news {
+		float: left;
+		width: 100%;
+		&__topline {
+			float: left;
+			width: 100%;
+			a {
+				@extend .home-deals__link;
+			}
+		}
+		&__menu {
+			@extend .home-fleamarket__menu;
+			&_item {
+				@extend .home-fleamarket__menu_item;
+				&_active {
+					@extend .home-fleamarket__menu_item_active;
+				}
+			}
+		}
+		&__content {
+			@extend .home-fleamarket__content;
+		}
+		&__item {
+			@extend .home-fleamarket__item;
+			&_title {
+				@extend .home-fleamarket__item_title;
+			}
+			&_info {
+				float: left;
+				width: 100%;
+			}
+			p {				
+				text: $base 16px;
+			}
+			span {
+				float: left;
+				text: #bebebe 12px;
+				em {
+					font-style: normal;
+				}
+			}
+			span.home-news__item_visit {
+				float: right;
+				position: relative;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding-left: 20px;
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					size: 14px 8px;
+					background-image: url('../img/icons/show.png');
+					background-repeat: no-repeat;
+					-webkit-background-size: contain;
+					     -o-background-size: contain;
+					        background-size: contain;					
+					-webkit-transform: translateY(-50%);
+					   -moz-transform: translateY(-50%);
+					    -ms-transform: translateY(-50%);
+					     -o-transform: translateY(-50%);
+					        transform: translateY(-50%);
+				}
+			}
+		}
+		&__controls {
+			float: left;
+			width: 100%;
+		}
+	}
 }
 
 .deals {		
@@ -631,7 +706,8 @@
 		        box-sizing: border-box;
 		padding: 0 25px;
 	}
-	&__block {					position: relative;
+	&__block {					
+		position: relative;
 		float: left;
 		width: 100%;
 		-webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
@@ -678,11 +754,7 @@
 				object-position: 50%;
 				vertical-align: middle;
 			}
-			&-more {
-				&:before {
-				  	content: '';
-				  	display: block;
-				}
+			&-more {				
 				display: none;
 				position: absolute;
 				bottom: 0;
@@ -690,6 +762,10 @@
 				height: 80px;
 				padding-left: 5px;
 				background: rgba(0, 0 , 0, 0.7);
+				&:before {
+				  	content: '';
+				  	display: block;
+				}
 				p {
 					margin: 5px;
 					font-size: 12px;
@@ -703,22 +779,15 @@
 					font-size: 12px;
 					padding: 5px;
 					margin: 5px 0 5px 5px;
-					display: block;
 					float: left;
-					@include background-clip(padding-box);
 					background-color: #272727;
-					@include box-shadow(1px, 2px, 4px, rgba(0,0,0,.94));		
 					background-image: -moz-linear-gradient(bottom, #0589cd 0%, #35abe5 100%);
 					background-image: -o-linear-gradient(bottom, #0589cd 0%, #35abe5 100%);
 					background-image: -webkit-linear-gradient(bottom, #0589cd 0%, #35abe5 100%);
 					background-image: linear-gradient(bottom, #0589cd 0%, #35abe5 100%);
 					&:hover, &:active, &:focus {
-						box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-						outline-color: rgba(255, 255, 255, 0);
-						outline-offset: 15px;
 						text-shadow: 1px 1px 2px #427388; 
 						text-decoration: none;
-						outline: none;
 						color: #fff;
 						background-image: -moz-linear-gradient(bottom, darken(#0589cd, 10%) 0%, darken(#35abe5, 10%) 100%);;
 						background-image: -o-linear-gradient(bottom, darken(#0589cd, 10%) 0%, darken(#35abe5, 10%) 100%);
