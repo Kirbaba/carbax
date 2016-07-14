@@ -164,7 +164,6 @@
 			margin: 0;
 			list-style: none;
 			li {
-				display: block;
 				flex: 1 1 100%;
 				display: block;
 				text-align: center;
@@ -240,6 +239,161 @@
 				text: #fff 300 16px;
 			}
 			
+		}
+	}
+	&-mapbox {
+		float: left;
+		width: 100%;
+		position: relative;
+		padding: 10px 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		text-align: center;
+		&__btn {
+			margin: 10px 0;
+			text: #FFF 16px;
+			padding: 10px 15px;
+			outline: none;
+			border: none;
+			-webkit-border-radius: 6px;
+			        border-radius: 6px;
+			border-bottom: 5px solid darken($orange, 10%);
+			svg {
+				display: inline-block;
+				size: 19px;
+				vertical-align: middle;
+				margin-right: 10px;
+				fill: #fff;
+			}
+			&:hover {
+				border-bottom: 5px solid $orange;
+			}
+		}
+	}
+	&-toplist {
+		float: left;
+		width: 100%;
+		padding: 30px 0;
+		background-color: #F3F1F1;
+		h2 {
+			text: $base bold center 24px;
+		}
+		&__table {
+			float: left;
+			width: 50%;
+			text: $base 16px;
+			text-align: right;
+			border-collapse: collapse;
+			caption {
+				text: $orange left bold 16px;
+				margin-bottom: 5px;
+			}
+			tr {
+				/* border-bottom: 1px solid #E1E0E0; */
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+			    td {
+			    	padding-right: 25px;
+			    	padding-top: 5px;
+			    	padding-bottom: 5px;
+			    	a {
+			    		font-weight: 500;
+			    		color: $base;
+			    		&:hover {
+			    			text-decoration: underline;
+			    		}
+			    	}
+			    }
+			    td, th {
+			    	border-bottom: 1px solid #E1E0E0;
+			    }				
+				td:first-of-type {
+					text-align: left;
+				}
+				&:last-of-type {
+					td, th {
+						border-bottom: none;
+					}					
+				}
+			}
+			&:nth-of-type(even) {
+				border-left: 1px solid #E1E0E0;
+				caption {
+					padding-left: 25px;
+				}
+				tr {
+					td {
+						padding-left: 25px;
+					}
+				}
+			}
+		}
+	}
+	&-salesearch {
+		float: left;
+		width: 100%;
+		position: relative;
+		background-color: $base;
+		padding: 10px 0;
+		&__link {
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+			img {
+				max-width: 110px;
+				vertical-align: baseline;
+				margin-right: 10px;
+			}
+			strong {
+				text:#fff bold uppercase 18px;
+			}
+		}
+		&__form {
+			display: flex;			
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			overflow: hidden;
+			&_select, &_inp, &_find, &_map {
+				height: 35px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				    border: none;
+				    outline: none;
+			}
+			&_select {
+				flex: 1 1 100%;
+				padding: 0 15px;	
+				text: $base 500 16px;	
+				appearance: none;		
+			}
+			&_inp {
+				flex: 1 1 100%;
+				background-color: #D0D0D0;
+				padding: 0 15px;
+				text: $base 500 16px;
+			}
+			&_find {
+				flex: 1 1 20%;
+				cursor: pointer;
+				text: $base 500 16px;
+				background-color: #D0D0D0;
+				@include transition(.2s);
+				&:hover {
+					background-color: darken(#D0D0D0, 10%);
+				}
+			}
+			&_map {
+				flex: 1 1 30%;
+				cursor: pointer;
+				text: #fff 500 16px;
+				@include transition(.2s);
+			}
 		}
 	}
 }
