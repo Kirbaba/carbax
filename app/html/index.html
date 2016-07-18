@@ -330,11 +330,16 @@
 				<!-- open .home-deals -->
 				<section class="home-deals">
 					<!-- open .home-deals__nav -->
-					<nav class="home-deals__nav">
+					<!-- open .container -->
+					<div class="container">
 						<a href="#" class="home-deals__link">
 							<img src="img/carbax_logo_2.png" alt="" />
 							<strong>спецпредложения</strong>
-						</a>
+						</a>	
+					</div>
+					<!-- close .container -->
+					
+					<nav class="home-deals__nav">						
 						<ul>
 							<li><a href="#" class="home-deals__nav_item home-deals__nav_item_active">Все</a></li>
 			                <li><a href="#" class="home-deals__nav_item">Автосалон</a></li>
@@ -345,25 +350,49 @@
 			                <li><a href="#" class="home-deals__nav_item">Авторазбор</a></li>
 			                <li><a href="#" class="home-deals__nav_item">Заправка</a></li>
 			                <li><a href="#" class="home-deals__nav_item">Страховка</a></li>	
-						</ul> 
-				
+						</ul> 				
 					</nav>
 					<!-- close .home-deals__nav -->
-
+				
 					<!-- open .home-deals__content -->
 					<div class="home-deals__content">
-						<div class="deals__item">
-							<div class="deals__block">
-								<div class="deals__block-sale">-33%</div>
-								<div class="deals__block-img">
-									<img src="img/mazda_cx5.png" alt="">
-									<div class="deals__block-img-more">
-										<p>сделаем все</p>
-										<a href="#">Подробнее</a>
+						<!-- open .container -->
+						<div class="container">
+							<div class="deals__item">
+								<div class="deals__block">
+									<div class="deals__block-sale">-33%</div>
+									<div class="deals__block-img">
+										<img src="img/mazda_cx5.png" alt="">
+										<div class="deals__block-img-more">
+											<p>сделаем все</p>
+											<a href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="deals__block-desc">
+										<p class="deals__title">Скидка на мойку авто</p>
+											<div class="deals__block-desc-price">
+												<div class="deals__block-desc-price_old">
+													<p><strike>120руб.</strike></p>
+												</div>
+												<div class="deals__block-desc-price_new">
+													<p>80руб.</p>
+												</div>
+										</div>
 									</div>
 								</div>
-								<div class="deals__block-desc">
-									<p class="deals__title">Скидка на мойку авто</p>
+							</div>
+							<div class="deals__item">
+								<div class="deals__block">
+									<div class="deals__block-sale">-33%</div>
+									<div class="deals__block-img">
+										<img src="img/mazda_cx5.png" alt="">
+										<div class="deals__block-img-more">
+											<p>сделаем все</p>
+											<a href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="deals__block-desc">
+										<p class="deals__title">Скидка на мойку авто</p>
 										<div class="deals__block-desc-price">
 											<div class="deals__block-desc-price_old">
 												<p><strike>120руб.</strike></p>
@@ -371,56 +400,36 @@
 											<div class="deals__block-desc-price_new">
 												<p>80руб.</p>
 											</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="deals__item">
-							<div class="deals__block">
-								<div class="deals__block-sale">-33%</div>
-								<div class="deals__block-img">
-									<img src="img/mazda_cx5.png" alt="">
-									<div class="deals__block-img-more">
-										<p>сделаем все</p>
-										<a href="#">Подробнее</a>
-									</div>
-								</div>
-								<div class="deals__block-desc">
-									<p class="deals__title">Скидка на мойку авто</p>
-									<div class="deals__block-desc-price">
-										<div class="deals__block-desc-price_old">
-											<p><strike>120руб.</strike></p>
-										</div>
-										<div class="deals__block-desc-price_new">
-											<p>80руб.</p>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="deals__item">
-							<div class="deals__block">
-								<div class="deals__block-sale">-33%</div>
-								<div class="deals__block-img">
-									<img src="img/mazda_cx5.png" alt="">
-									<div class="deals__block-img-more">
-										<p>сделаем все</p>
-										<a href="#">Подробнее</a>
-									</div>
-								</div>
-								<div class="deals__block-desc">
-									<p class="deals__title">Скидка на мойку авто</p>
-										<div class="deals__block-desc-price">
-										<div class="deals__block-desc-price_old">
-											<p><strike>120руб.</strike></p>
-										</div>
-										<div class="deals__block-desc-price_new">
-											<p>80руб.</p>
+							<div class="deals__item">
+								<div class="deals__block">
+									<div class="deals__block-sale">-33%</div>
+									<div class="deals__block-img">
+										<img src="img/mazda_cx5.png" alt="">
+										<div class="deals__block-img-more">
+											<p>сделаем все</p>
+											<a href="#">Подробнее</a>
 										</div>
 									</div>
+									<div class="deals__block-desc">
+										<p class="deals__title">Скидка на мойку авто</p>
+											<div class="deals__block-desc-price">
+											<div class="deals__block-desc-price_old">
+												<p><strike>120руб.</strike></p>
+											</div>
+											<div class="deals__block-desc-price_new">
+												<p>80руб.</p>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
+							</div>	
 						</div>
+						<!-- close .container -->
+						
 					</div>
 					<!-- close .home-deals__content -->
 
@@ -452,10 +461,14 @@
 				<section class="home-news">
 					<!-- open .home-news__topline -->
 					<div class="home-news__topline">
-						<a href="#">
-							<img src="img/carbax_logo_2.png" alt="" />
-							<strong>новости</strong>
-						</a>
+						<!-- open .container -->
+						<div class="container">
+							<a href="#">
+								<img src="img/carbax_logo_2.png" alt="" />
+								<strong>новости</strong>
+							</a>	
+						</div>
+						<!-- close .container -->						
 					</div>
 					<!-- close .home-news__topline -->
 					<!-- open .container -->

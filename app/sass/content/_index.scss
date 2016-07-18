@@ -175,6 +175,9 @@
 					text: #fff 300 16px;
 					padding: 15px 0;
 					@include transition(.3s);
+					 @include respondTo(tablet) {
+					     height: 45px;
+					  }
 					&:hover {
 						background-color: darken(#333, 10%);
 					}
@@ -429,6 +432,7 @@
 				position: relative;
 				padding: 10px 10px;
 				text: #818181 500 16px;
+				
 				&:after {
 					content: "";
 					position: absolute;
@@ -546,7 +550,7 @@
 			-webkit-box-sizing: border-box;
 			   -moz-box-sizing: border-box;
 			        box-sizing: border-box;
-		    padding: 10px 15px;
+		    padding: 10px 0;
 		   img {
 				max-width: 110px;
 				vertical-align: baseline;
@@ -582,6 +586,10 @@
 				-webkit-box-sizing: border-box;
 				   -moz-box-sizing: border-box;
 				        box-sizing: border-box;
+				@include respondTo(tablet) {
+					height: 45px;
+					padding: 5px 10px;
+				}
 				&:hover {
 					background-color: darken(#CFCECE, 10%);
 				}

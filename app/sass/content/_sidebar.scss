@@ -8,8 +8,12 @@
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 20%;
-	z-index: 0;
+	z-index: 999;
 	background-color: $base;
+	@include respondTo(tablet) {
+    	position: absolute;
+    	width: 250px;
+	}
 	&__list {
 		float: left;
 		width: 100%;

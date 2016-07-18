@@ -1,10 +1,18 @@
 .footer {
+    flex: 1 0 100%;
 	background-color: $base;
 	padding: 45px 15px 45px 0;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	color: #FFF;
+	@include respondTo(tablet) {
+		float: left;
+		width: 100%;
+		position: relative;
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
 	&__sitemap {
 		float: left;
 		width: 100%;

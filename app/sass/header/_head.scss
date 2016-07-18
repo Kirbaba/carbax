@@ -8,7 +8,7 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: $base;
-	z-index: 5;
+	z-index: 1000;
 	&__logo {
 		float: left;
 		width: 20%;

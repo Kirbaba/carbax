@@ -1,5 +1,8 @@
 .page-wrap {
   width: 100%;
+  @include respondTo(tablet) {
+     position: relative;
+  }
 }
 
 .container {
@@ -29,5 +32,11 @@
 @media (min-width: 1200px) {
   .container {
     width: 990px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .container {
+    width: 1200px;
   }
 }

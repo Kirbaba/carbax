@@ -10,9 +10,24 @@
 	-webkit-flex-flow: column wrap;
 	    -ms-flex-flow: column wrap;
 	        flex-flow: column wrap;
+	@include respondTo(tablet) {
+    	display: block;
+		position: relative;
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
 	&__wrap {
+
 		-webkit-flex: 1;
 		    -ms-flex: 1;
 		        flex: 1;
+	    @include respondTo(tablet) {
+	    	display: block;
+			float: left;
+			width: 100%;
+			position: relative;
+			-webkit-flex-basis: 100%;
+			        flex-basis: 100%;
+		}
 	}
 }
