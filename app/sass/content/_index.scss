@@ -640,6 +640,10 @@
 				}
 			}
 		}
+		&__wrap {
+			float: left;
+			width: 100%;
+		}
 		&__content {
 			@extend .home-fleamarket__content;
 		}
