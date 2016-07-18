@@ -501,9 +501,12 @@
 			text-align: center;
 		}
 		&__new, &__top {
-			width: 150px;
+			width: 170px;
 			margin: 0 5px 15px;
 			padding: 10px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
 			text: #fff 500 uppercase 14px;
 			@include transition(.2s);
 			-webkit-border-radius: 6px;
@@ -615,13 +618,7 @@
 			@extend .home-fleamarket__new;			
 		}
 		&__top {
-			@extend .home-fleamarket__top;
-			background-color: $orange;
-			border-bottom-color: darken($orange, 10%);
-			&:hover {
-				background-color: darken($orange, 10%);
-				border-bottom-color: $orange;
-			}
+			@extend .home-fleamarket__top;			
 		}
 	}
 	&-news {
@@ -877,4 +874,11 @@
 	}
 }
 
-
+.btn_controls_active {
+	background-color: $orange;
+	border-bottom-color: darken($orange, 10%);
+	&:hover {
+		background-color: darken($orange, 10%);
+		border-bottom-color: $orange;
+	}
+}
