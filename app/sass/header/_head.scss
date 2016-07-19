@@ -71,12 +71,15 @@
 		display: inline-block;
 		text-align: center;
 		padding: 5px 40px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
 		border: none;
 		height: 31px;
 		margin: 0 10px;
 		-webkit-border-radius: 31px;
 		        border-radius: 31px;
-		text: #fff uppercase bold 12px;
+		text: #fff uppercase bold 12px 1.5;
 	}
 	&__request {
 		display: inline-block;
