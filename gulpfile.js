@@ -129,7 +129,7 @@ gulp.task('extend', function () {
 
 });
 
-gulp.task('watch', ['browser-sync', 'compress'], function() {
+gulp.task('watch', ['compress'], function() {
     gulp.watch('app/img/**/*', ['img']);
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['app/html/*.html'], ['extend']);
