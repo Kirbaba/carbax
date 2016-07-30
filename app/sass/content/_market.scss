@@ -116,7 +116,7 @@
 .market-slider{
   display: block;
   position: relative;
-  width: 47%;
+  width: 55%;
   float: left;
   /*margin-left: 43px;*/
   &__box{
@@ -152,7 +152,7 @@
 .market-descr{
   display: block;
   position: relative;
-  width: 50%;
+  width: 45%;
   float: left;
   &__box{
     display: block;
@@ -296,12 +296,12 @@
   &__unit{
     display: block;
     position: relative;
-    width: 50%;
+    width: 55%;
     float: left;
     &--item{
       display: block;
       position: relative;
-      width: 91%;
+      width: 98%;
       height: 34px;
       float: left;
       background-color: white;
@@ -318,14 +318,14 @@
   &__mileage{
     display: block;
     position: relative;
-    width: 50%;
+    width: 45%;
     float: left;
     margin-top: -38px;
     &--name{
       display: block;
       position: relative;
-      width: 100%;
-      float: left;
+      width: 89%;
+      float: right;
       color: #272727;
       font-family: $calibri;
       font-size: 16px;
@@ -334,9 +334,9 @@
     &--field{
       display: block;
       position: relative;
-      width: 100%;
+      width: 89%;
       height: 34px;
-      float: left;
+      float: right;
       background-color: white;
       color: #d0d0d0;
       font-family: $calibri;
@@ -362,5 +362,52 @@
     font-family: $calibri;
     font-size: 24px;
     margin-bottom: 20px;
+  }
+  &__map{
+    display: block;
+    position: relative;
+    width: 55%;
+    height: 286px;
+    float: left;
+    overflow: hidden;
+    #map{
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &__messengers{
+    display: block;
+    position: relative;
+    width: 45%;
+    float: left;
+    &--name{
+      position: relative;
+      display: block;
+      float: left;
+      width: 295px;
+      height: 45px;
+      border-bottom: 3px solid #363636;
+      border-radius: 6px;
+      background-color: #4c4b4b;
+      text-align: center;
+      color: #fffcf4;
+      font-family: $calibri;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 40px;
+      margin-bottom: 11px;
+      margin-left: 44px;
+      .messenger{
+        display: block;
+        position: relative;
+        width: 50%;
+        float: left;
+        text-align: center;
+      }
+    }
   }
 }
