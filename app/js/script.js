@@ -25,4 +25,15 @@ $(document).ready(function () {
         myMap.geoObjects.add(myPlacemark);
     });
    /*close yandex map*/
+   /*market tabs*/
+    $('.page__tabs_target').click(function(event) {
+        $('.page__tabs_target').removeClass('active');//при клике на нужный элемент удаляем у соседних класс 'active'
+        $(this).addClass('active'); //и добавляем класс 'active' элементу, по которому кликнули
+        event.preventDefault();//отменяем действие браузера по умолчанию для тега 'a',
+        var target = ($(this).data('tab'));//создаем переменную 'target' которая содержит значение атрибута 'data-tab'
+
+        $('.page__tabcontent').hide();//страница с контентом спрятана по умолчанию
+        $("."+ target).show();//отображаем страницу при клике на соответсвующую вкладку с соответсвующим значением 'data-tab',
+    });
+   /*close market tabs*/
 });
