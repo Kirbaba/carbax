@@ -136,19 +136,52 @@
         <!-- open .content-wrapper -->
         <div class="content__wrap">
 
-            <!-- open .home-categories -->
-            <section class="home-categories">
-                 <a href="#" class="home-categories__item home-categories__item_business">
-						<span class="home-categories__item_circle">
+            <!-- open .business-header -->
+            <section class="business-header">
+                 <div class="business-categorie">
+						<span class="business-categorie__circle">
 							<img src="img/business.png" alt="" />
 						</span>
-						<span class="home-categories__item_desc">
-							<span class="home-categories__item_carbax">CARBAX.RU</span>
-							<span class="home-categories__item_title">Для <br />бизнесса</span>
+						<span class="business-categorie__desc">
+							<span class="business-categorie__desc--carbax">CARBAX.RU</span>
+							<span class="business-categorie__desc--title">Для <br />бизнесса</span>
 						</span>
-                  </a>
+                  </div>
+
+                <div class="business-step">
+
+                    <span class="business-step__title"><span>ШАГ1</span> ДОБАВИТЬ СЕРВИС/ОПИСАНИЕ</span>
+
+                </div>
             </section>
-            <!-- close .home-categories -->
+            <!-- close .business-header -->
+
+            <!-- open .business-map -->
+            <section class="business-map">
+                <form action="" class="business-map__fields">
+
+                    <input class="business-map__name" type="text" placeholder="Название автосервиса">
+                    <input class="business-map__adress" type="text" placeholder="Адрес автосервиса">
+
+                </form>
+
+                <div class="business-map__container">
+
+                    <div id="businessMap"></div>
+
+                </div>
+
+                <form action="" class="business-map__fields">
+
+                    <input class="business-map__files" type="text">
+                    <div class="business-map__hover">Выбрать...</div>
+                    <input class="business-map__adfile" type="file">
+                    <div></div>
+
+                </form>
+
+            </section>
+            <!-- close .business-map -->
 
         </div>
         <!-- close .content-wrapper -->
@@ -272,7 +305,7 @@
 <!-- start html_close.html-->
 </body>
 <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script>
-<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../../js/fotorama.js" type="text/javascript"></script>
 <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
