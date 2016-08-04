@@ -123,7 +123,7 @@ gulp.task("clean", function (cb) {
 });
 
 gulp.task('extend', function () {
-    gulp.src('./app/html/*.html')
+    gulp.src('./app/html/pages/*.html')
         .pipe(extender({annotations:true,verbose:false})) // default options
         .pipe(gulp.dest('./'))
 
