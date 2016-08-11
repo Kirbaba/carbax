@@ -380,7 +380,7 @@
 				    outline: none;
 			}
 			&_select {
-				flex: 1 1 100%;
+				flex: 1 1 98%;
 				padding: 0 15px;	
 				text: $base 500 16px;	
 				appearance: none;		
@@ -843,7 +843,7 @@
 						left: -30px;
 						border-top: 30px solid $orange;
 						border-left: 30px solid transparent;
-						z-index: 1;
+						z-index: 9999;
 						
 					}				
 					p {
