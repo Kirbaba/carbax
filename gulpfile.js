@@ -110,7 +110,8 @@ gulp.task('compress', ['clean'], function() {
       suffix: ".min",
       extname: ".js"
   }))
-  .pipe(gulpif(argv.production, uglify())) // <- добавляем вот эту строчку
+      .pipe(uglify()) // Сжимаем JS файл
+      /*.pipe(gulpif(argv.production, uglify())) // <- добавляем вот эту строчку (Сжимаем JS файл)*/
   .pipe(plumber.stop())
   .pipe(gulp.dest('js'));
 

@@ -28,8 +28,7 @@ $(document).ready(function () {
 
             myMap.geoObjects.add(myPlacemark);
         });
-    }
-    ;
+    };
     /*close market yandex map*/
 
     /*business yandex map*/
@@ -48,8 +47,7 @@ $(document).ready(function () {
 
             myMap.geoObjects.add(myPlacemark);
         });
-    }
-    ;
+    };
     /*close business yandex map*/
 
     /*market tabs*/
