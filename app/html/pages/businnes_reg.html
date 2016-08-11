@@ -1,0 +1,682 @@
+<!-- @@include ../html_open.html -->
+
+<!-- @@include ../header.html -->
+
+<!-- open .content-wrap -->
+<main class="page-wrap">
+
+    <!-- @@include ../sidebar.html -->
+
+    <!-- open .content-box -->
+    <section class="content">
+
+        <!-- open .content-wrapper -->
+        <div class="content__wrap">
+
+            <!-- open .business-header -->
+            <section class="business-header">
+                <div class="business-categorie">
+						<span class="business-categorie__circle">
+							<img src="img/business.png" alt=""/>
+						</span>
+						<span class="business-categorie__desc">
+							<span class="business-categorie__desc--carbax">CARBAX.RU</span>
+							<span class="business-categorie__desc--title">Для <br/>бизнесса</span>
+						</span>
+                </div>
+
+                <div class="business-step">
+
+                    <span class="business-step__title"><span>ШАГ1</span> ДОБАВИТЬ СЕРВИС/ОПИСАНИЕ</span>
+
+                </div>
+            </section>
+            <!-- close .business-header -->
+
+            <!-- open .business-map -->
+            <section class="business-map">
+
+                <form action="" class="business-map__fields">
+
+                    <input class="business-map__name" type="text" placeholder="Название автосервиса">
+                    <input class="business-map__adress" type="text" placeholder="Адрес автосервиса">
+
+                </form>
+
+                <div class="business-map__container">
+
+                    <div id="businessMap"></div>
+
+                </div>
+
+                <form action="" class="business-map__fields">
+
+                    <input class="business-map__files" type="text">
+                    <div class="business-map__hover">Выбрать...</div>
+                    <input class="business-map__adfile" type="file">
+                    <div></div>
+
+                </form>
+
+            </section>
+            <!-- close .business-map -->
+
+            <!-- open .business-descr -->
+            <section class="business-descr">
+
+                <span class="business-descr__title">Описание</span>
+
+                <div class="container">
+
+                    <textarea class="business-descr__content"></textarea>
+
+                </div>
+
+
+            </section>
+            <!-- close .business-descr -->
+
+            <!-- open .business-options -->
+            <section class="business-options">
+                <div class="container">
+
+                    <div class="business-options__time">
+
+                        <span class="business-options__title">Время работы</span>
+
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="1">
+                                <label for="1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>пн
+                                </label>
+                            </div>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <input class="business-options__item--check" type="checkbox" id="1_1">
+                            <label for="1_1" class="business-options__item--forcheck">
+                                <span class="business-options__item--checked"></span>круглосуточно
+                            </label>
+
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="2">
+                                <label for="2" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>вт
+                                </label>
+                            </div>
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <input class="business-options__item--check" type="checkbox" id="2_2">
+                            <label for="2_2" class="business-options__item--forcheck">
+                                <span class="business-options__item--checked"></span>круглосуточно
+                            </label>
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="3">
+                                <label for="3" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>ср
+                                </label>
+                            </div>
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <input class="business-options__item--check" type="checkbox" id="3_3">
+                            <label for="3_3" class="business-options__item--forcheck">
+                                <span class="business-options__item--checked"></span>круглосуточно
+                            </label>
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="4">
+                                <label for="4" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>чт
+                                </label>
+                            </div>
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <input class="business-options__item--check" type="checkbox" id="4_4">
+                            <label for="4_4" class="business-options__item--forcheck">
+                                <span class="business-options__item--checked"></span>круглосуточно
+                            </label>
+                        </div>
+                        <div class="business-options__item">
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="5">
+                                <label for="5" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>пт
+                                </label>
+                            </div>
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <input class="business-options__item--check" type="checkbox" id="5_5">
+                            <label for="5_5" class="business-options__item--forcheck">
+                                <span class="business-options__item--checked"></span>круглосуточно
+                            </label>
+                        </div>
+                        <div class="business-options__item">
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="6">
+                                <label for="6" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>сб
+                                </label>
+                            </div>
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <input class="business-options__item--check" type="checkbox" id="6_6">
+                            <label for="6_6" class="business-options__item--forcheck">
+                                <span class="business-options__item--checked"></span>круглосуточно
+                            </label>
+                        </div>
+                        <div class="business-options__item">
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="7">
+                                <label for="7" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>вс
+                                </label>
+                            </div>
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <select class="business-options__item--select">
+                                <option value="">8:00</option>
+                                <option value="">9:00</option>
+                                <option value="">10:00</option>
+                                <option value="">11:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">14:00</option>
+                                <option value="">15:00</option>
+                                <option value="">16:00</option>
+                                <option value="">17:00</option>
+                                <option value="">18:00</option>
+                            </select>
+
+                            <input class="business-options__item--check" type="checkbox" id="7_7">
+                            <label for="7_7" class="business-options__item--forcheck">
+                                <span class="business-options__item--checked"></span>круглосуточно
+                            </label>
+                        </div>
+
+
+                    </div>
+
+                    <div class="business-options__comfort">
+
+                        <span class="business-options__title">Зона комфорта</span>
+
+                        <div class="business-options__item">
+
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/wc_icon.png" alt="wc"><span>Туалет</span>
+                            </div>
+
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="1_2">
+                                <label for="1_2" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/atm.png" alt="ATM"><span>Банкомат</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="2_1">
+                                <label for="2_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/wifi_icon.png" alt="wifi"><span>Wi-Fi</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="3_1">
+                                <label for="3_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/cafe_icon.png" alt="cafe"><span>Кафе</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+
+                                <input class="business-options__item--check" type="checkbox" id="4_1">
+                                <label for="4_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/tire_icon.png" alt="tire"><span>Подкачка шин</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="5_1">
+                                <label for="5_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/postpay.png" alt="postpay"><span>Постоплата</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="6_1">
+                                <label for="6_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/coffeemach_icon.png" alt="coffeemach"><span>Кофе-автомат</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="7_1">
+                                <label for="7_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/basket_icon.png" alt="shop"><span>Магазин</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="8_1">
+                                <label for="8_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/bankcart_icon.png" alt="bankcart"><span>Оплата картой</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="9_1">
+                                <label for="9_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/parking_icon.png" alt="parking"><span>Парковка для клиентов</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="10_1">
+                                <label for="10_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/payterminal_icon.png" alt="payterminal"><span>Терминал оплаты</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="11_1">
+                                <label for="11_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="business-options__item">
+
+                            <div class="business-options__item--element">
+                                <img src="img/icons/hotel_icon.png" alt="hotel"><span>Зона отдыха</span>
+                            </div>
+
+                            <div class="business-options__item--fields">
+                                <input class="business-options__item--check" type="checkbox" id="12_1">
+                                <label for="12_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- close .business-options -->
+
+            <!-- open .business-cars -->
+            <section class="business-cars">
+                <div class="container">
+                    <span class="business-cars__title">Работаем</span>
+
+                    <div class="business-cars__type">
+
+                        <span class="business-cars__type--head">С легковыми авто</span>
+
+                        <img class="business-cars__type--icon" src="img/icons/car_icon.png" alt="car">
+
+
+                        <input class="business-cars__type--check" type="checkbox" id="13_1">
+                        <label class="business-cars__type--forcheck" for="13_1">
+                            <span class="business-cars__type--checked"></span>
+                        </label>
+
+                    </div>
+
+                    <div class="business-cars__type">
+
+                        <span class="business-cars__type--head">С грузовыми авто</span>
+
+                        <img class="business-cars__type--icon" src="img/icons/truck_icon.png" alt="truck">
+
+
+                        <input class="business-cars__type--check" type="checkbox" id="14_1">
+                        <label class="business-cars__type--forcheck" for="14_1">
+                            <span class="business-cars__type--checked"></span>
+                        </label>
+
+                    </div>
+
+                    <div class="business-cars__type">
+
+                        <span class="business-cars__type--head">С мототехникой</span>
+
+                        <img class="business-cars__type--icon" src="img/icons/moto_icon.png" alt="moto">
+
+
+                        <input class="business-cars__type--check" type="checkbox" id="15_1">
+                        <label class="business-cars__type--forcheck" for="15_1">
+                            <span class="business-cars__type--checked"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- close .business-cars -->
+
+            <!-- close .business-footer -->
+            <section class="business-footer">
+
+                <div class="container">
+
+                    <div class="business-footer__contacts">
+
+                        <span class="business-footer__title">Контакты</span>
+
+                        <input type="text" class="business-footer__contacts--field" placeholder="web сайт">
+                        <input type="text" class="business-footer__contacts--field" placeholder="телефон">
+                        <input type="text" class="business-footer__contacts--field" placeholder="почта">
+
+                        <span class="business-footer__title">Работает с</span>
+
+                        <input class="business-footer__contacts--check" type="checkbox" id="16_1">
+                        <label class="business-footer__contacts--forcheck" for="16_1">
+                            <span class="business-footer__contacts--checked"></span>Частные лица
+                        </label>
+
+                        <input class="business-footer__contacts--check" type="checkbox" id="17_1">
+                        <label class="business-footer__contacts--forcheck" for="17_1">
+                            <span class="business-footer__contacts--checked"></span>Юридические лица
+                        </label>
+
+                    </div>
+                    <div class="business-footer__payment">
+
+                        <span class="business-footer__title">Способ оплаты</span>
+
+                        <input class="business-footer__payment--check" type="checkbox" id="18_1">
+                        <label class="business-footer__payment--forcheck" for="18_1">
+                            <span class="business-footer__payment--checked"></span>Частные лица
+                        </label>
+
+                        <input class="business-footer__payment--check" type="checkbox" id="19_1">
+                        <label class="business-footer__payment--forcheck" for="19_1">
+                            <span class="business-footer__payment--checked"></span>Юридические лица
+                        </label>
+
+                        <input class="business-footer__payment--check" type="checkbox" id="20_1">
+                        <label class="business-footer__payment--forcheck" for="20_1">
+                            <span class="business-footer__payment--checked"></span>Юридические лица
+                        </label>
+
+
+                        <a href="#" class="business-footer__payment--send">сохранить</a>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- close .business-footer -->
+
+        </div>
+        <!-- close .content-wrapper -->
+        <!-- @@include ../footer.html -->
+    </section>
+    <!-- close .content-box -->
+</main>
+<!-- close .content-wrap -->
+
+<!-- @@include ../html_close.html -->
+

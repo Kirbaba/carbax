@@ -10,6 +10,20 @@ body {
   min-width: 1200px;
 }
 
+input{
+  outline: none;
+  &:hover, &:focus, &:active{
+    outline: none;
+  }
+}
+
+textarea{
+  outline: none;
+  &:hover, &:focus, &:active{
+    outline: none;
+  }
+}
+
 %clearfix {
   *zoom: 1;
   &:after {
@@ -23,7 +37,7 @@ body {
 a {
 	text-decoration: none;
 	&:hover, &:focus, &:active{
-		outline: none;
+	   text-decoration: none;
 	}
 }
 

@@ -7,18 +7,16 @@ var gulp = require('gulp'), // Подключаем Gulp
     del = require('del'), // Подключаем библиотеку для удаления файлов и папок
     imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-    cache = require('gulp-cache'); // Подключаем библиотеку кеширования
-    extender = require('gulp-html-extend'),
-    sourcemaps = require('gulp-sourcemaps'),
-    rimraf = require('rimraf'),
+    cache = require('gulp-cache'), // Подключаем библиотеку кеширования
+    extender = require('gulp-html-extend'),//Подключаем бибилиотеку для склейки html-файлов
+    sourcemaps = require('gulp-sourcemaps'),//Подключаем плагин, записывающий карту источника в исходный файл
+    rimraf = require('rimraf'),//Очищает указанные исходники
     argv = require('yargs').argv,
-    gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber');//Подключаем плагин, который не останавливает задачи от остановки во время их выполнения при возникновении ошибки
 
-var postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
-    cssnano = require('cssnano'),
+var postcss = require('gulp-postcss'),//Блиотека-парсер стилей для работы с postcss-плагинами
+    autoprefixer = require('autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
+    cssnano = require('cssnano'),//postcss-плагин, для минификации CSS кода, идущего на продакшен.
     pxtorem = require('postcss-pxtorem'),
     short = require('postcss-short'),
     stylefmt = require('stylefmt'),
@@ -123,13 +121,13 @@ gulp.task("clean", function (cb) {
 });
 
 gulp.task('extend', function () {
-    gulp.src('./app/html/*.html')
+    gulp.src('./app/html/pages/*.html')
         .pipe(extender({annotations:true,verbose:false})) // default options
         .pipe(gulp.dest('./'))
 
 });
 
-gulp.task('watch', ['browser-sync', 'compress'], function() {
+gulp.task('watch', ['compress', 'extend'], function() {
     gulp.watch('app/img/**/*', ['img']);
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['app/html/*.html'], ['extend']);
