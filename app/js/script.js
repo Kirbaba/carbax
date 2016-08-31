@@ -61,4 +61,15 @@ $(document).ready(function () {
         $("." + target).show();//отображаем страницу при клике на соответсвующую вкладку с соответсвующим значением 'data-tab',
     });
     /*close market tabs*/
+
+    /*menu scroll*/
+    $('.smoothScroll').click(function (event) {/*функция прокрутки на блок страницы при клике по элементам меню */
+        event.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href);
+        var top = target.offset().top;
+        $('html, body').animate({scrollTop: top}, 1000);
+        return false;
+    });
+    /*close menu scroll*/
 });

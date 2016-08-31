@@ -1,0 +1,136 @@
+.cabinet-nav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  /*float: left;*/
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+  li{
+    flex: 1 1 auto;
+    text-align: center;
+    a{
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      font-family: $calibri;
+      font-size: 16px;
+      @include transition(0.4s);
+      &:hover{
+        color: $orange;
+        background-color: #000000;
+      }
+    }
+  }
+  li:nth-of-type(odd){
+    background-color: #333333;
+  }
+  li:nth-of-type(even){
+    background-color: #434142;
+  }
+}
+.cabinet__box{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  &--head{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    color: #282828;
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 64%;
+      height: 1px;
+      background-color: #7d7d7d;
+      content: "";
+      margin-top: 29px;
+      margin-left: 103px;
+    }
+  }
+  &--title{
+    display: block;
+    position: relative;
+    float: left;
+    font-family: $calibri;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &--subtitle{
+    display: block;
+    position: relative;
+    float: left;
+    color: #282828;
+    font-family: $calibri;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    span{
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+}
+.cabinet__registration{
+  display: block;
+  position: relative;
+  width: auto;
+  height: 31px;
+  float: right;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 5px 40px;
+  border: none;
+  border-radius: 31px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #ff6b00;
+  margin-top: 14px;
+  @include transition(0.4s);
+  &:hover{
+    background-color: #cc5600;
+  }
+}
+.cabinet__container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  float: left;
+  &--item{
+    display: block;
+    position: relative;
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 0px;
+  }
+  &--img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 162px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
