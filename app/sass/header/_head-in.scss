@@ -17,14 +17,18 @@
     background-color: #434142;
     border-radius: 50%;
     overflow: hidden;
+    @include transition(0.4s);
     img{
       display: block;
       position: relative;
       width: 10px;
       height: 10px;
-      object-fit: cover;
-      margin: 3px auto;
+      object-fit: contain;
+      margin: 6px auto;
     }
+  }
+  .header__request:hover{
+    background-color: $orange;
   }
   .header__signin {
     text-transform: uppercase;
