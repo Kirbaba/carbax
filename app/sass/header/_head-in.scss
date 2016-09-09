@@ -30,6 +30,19 @@
   .header__request:hover{
     background-color: $orange;
   }
+  .header__request--income{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 160px;
+    top: 28px;
+    border-radius: 50%;
+    background-color: $orange;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+  }
   .header__signin {
     text-transform: uppercase;
     color: white;
