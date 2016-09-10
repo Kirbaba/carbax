@@ -29,28 +29,19 @@ var postcss = require('gulp-postcss'),//Блиотека-парсер стиле
 
 
 
-gulp.task('css-libs', function() { // Создаем таск Sass
+gulp.task('css-libs', function() { // Создаем таск css-libs
     var processors = [
         cssnano
     ]
     return gulp.src([
-            'app/libs/normalize-css/normalize.css',
+            'app/libs/normalize-css/normalize.css'
         ]) // Берем источник
-        .pipe(postcss(processors))
-        .pipe(concat('libs.min.css'))
+        .pipe(postcss(processors))// сжымаем
+        .pipe(concat('libs.min.css'))// объеденяем в файл
         .pipe(gulp.dest('css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({
             stream: true
         })) // Обновляем CSS на странице при изменении
-});
-
-gulp.task('js-libs', function() {
-    return gulp.src([ // Берем все необходимые библиотеки
-            'app/libs/jquery/dist/jquery.min.js'
-        ])
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('js')); // Выгружаем в папку app/js
 });
 
 gulp.task('sass', function() { // Создаем таск Sass
@@ -62,10 +53,10 @@ gulp.task('sass', function() { // Создаем таск Sass
         autoprefixer(['last 5 versions', '> 5%', 'ie 8', 'ie 7'], {
             cascade: true
         }),
-        pxtorem({
+       /* pxtorem({
             rootValue: 14,
             replace: false
-        }),
+        }),*/
         focus,
         sorting(),
         stylefmt,
@@ -91,7 +82,7 @@ gulp.task('sass', function() { // Создаем таск Sass
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
-            target: 'carbax' // Директория для сервера - app
+            target: 'loaf_furniture' // Директория для сервера - app
         },
         ghostMode: {
             clicks: true,
@@ -102,18 +93,18 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
-gulp.task('compress', ['clean'], function() {
-  return gulp.src('app/js/*.js')
-  .pipe(plumber())
-  .pipe(concat('script.js'))
-  .pipe(rename({
-      suffix: ".min",
-      extname: ".js"
-  }))
-      .pipe(uglify()) // Сжимаем JS файл
-      /*.pipe(gulpif(argv.production, uglify())) // <- добавляем вот эту строчку (Сжимаем JS файл)*/
-  .pipe(plumber.stop())
-  .pipe(gulp.dest('js'));
+gulp.task('compress', ['clean'], function() {// Создаем таск compress
+    return gulp.src('app/js/*.js')// Берем все необходимые библиотеки
+        .pipe(plumber())
+        .pipe(concat('script.js'))// Собираем их в кучу в новом файле script.js
+        .pipe(rename({
+            suffix: ".min",// Добавляем суффикс .min
+            extname: ".js"// Добавляем окончание .js
+        }))
+        .pipe(uglify()) // Сжимаем JS файл
+        /*.pipe(gulpif(argv.production, uglify())) // <- добавляем вот эту строчку (Сжимаем JS файл)*/
+        .pipe(plumber.stop())
+        .pipe(gulp.dest('js'));// Выгружаем в папку js
 
 });
 
@@ -128,14 +119,15 @@ gulp.task('extend', function () {
 
 });
 
-gulp.task('watch', ['compress', 'extend', 'img'], function() {
-    gulp.watch('app/img/**/*', ['img']);
+gulp.task('watch', ['compress', 'extend', 'css-libs', 'img', 'sass'], function() {
+    gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
+    gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-    gulp.watch(['app/html/*.html'], ['extend']);
-    gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+    gulp.watch(['app/html/*.html'], ['extend']);// Наблюдение за HTML-файлами
+    gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML-файлами
     gulp.watch('app/js/*', function() {
-       gulp.run('compress');
-  }, browserSync.reload); // Наблюдение за JS файлами в папке js
+        gulp.run('compress');
+    }, browserSync.reload); // Наблюдение за JS файлами в папке js
 });
 
 gulp.task('img', function() {
@@ -154,22 +146,22 @@ gulp.task('img', function() {
         }));
 });
 
-
+/*
 gulp.task('build', ['img', 'sass', 'scripts'], function() {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-            'app/css/main.css',
-            'app/css/libs.min.css'
-        ])
+        'app/css/main.css',
+        'app/css/libs.min.css'
+    ])
         .pipe(gulp.dest('css'))
 
-    var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
+    var buildFonts = gulp.src('app/fonts/!**!/!*') // Переносим шрифты в продакшен
         .pipe(gulp.dest('fonts'))
 
-    var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
+    var buildJs = gulp.src('app/js/!**!/!*') // Переносим скрипты в продакшен
         .pipe(gulp.dest('js'))
 
-});
+});*/
 
 
 gulp.task('clear', function(callback) {
@@ -177,3 +169,6 @@ gulp.task('clear', function(callback) {
 });
 
 gulp.task('default', ['watch']);
+
+/*
+npm i gulp gulp-sass browser-sync gulp-concat gulp-uglifyjs gulp-rename del gulp-imagemin imagemin-pngquant gulp-cache gulp-html-extend gulp-sourcemaps rimraf yargs gulp-plumber gulp-postcss autoprefixer cssnano postcss-pxtorem postcss-short stylefmt postcss-assets postcss-short-spacing postcss-focus postcss-sorting postcss-font-magician postcss-fixes --save-dev*/

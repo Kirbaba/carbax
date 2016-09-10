@@ -6,9 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="format-detection" content="telephone=no">
-    <title></title>
+    <title>Создать акцию</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/fileinput.css" rel="stylesheet" type="text/css">
     <link href="css/libs.min.css" rel="stylesheet" type="text/css">
     <link href="css/flexslider.css" rel="stylesheet" type="text/css">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
@@ -158,9 +159,60 @@
 
                 <div class="container">
 
-                <span class="share__way">
-                <a href="#">Личный кабинет /</a><a href="#">Разместить акцию</a>
-                </span>
+                        <span class="share__way">
+                        <a href="#" class="share__way--link-first">Личный кабинет</a>/
+                        <a href="#" class="share__way--link-second">Разместить акцию</a>
+                        </span>
+
+                    <form action="" class="share__form">
+                        <h3 class="share__title">Заголовок:</h3>
+
+                        <input type="text" class="share__select" placeholder="Ввведите заголовок" required>
+                        <span class="share__arr"></span>
+
+                        <div class="share__main">
+
+                            <h3 class="share__title">Добавить фотографии:</h3>
+
+                            <!--<div enctype="multipart/form-data">-->
+                               <!-- <form enctype="multipart/form-data">-->
+                                    <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
+                                    <br>
+                               <!-- </form>-->
+                           <!-- </div>-->
+
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">Условия</a></li>
+                                <li><a href="#profile" data-toggle="tab">Описание</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home">...</div>
+                                <div class="tab-pane" id="profile">...</div>
+                            </div>
+
+                        </div>
+
+                        <div class="share__side">
+
+                            <h3 class="share__title">Старая цена, руб</h3>
+
+                            <input type="text" class="share__price" required>
+
+                            <h3 class="share__title">Новая цена, руб</h3>
+
+                            <input type="text" class="share__price" required>
+
+                            <h3 class="share__title">Скидка, %</h3>
+
+                            <input type="text" class="share__price" required>
+
+                        </div>
+
+                    </form>
 
                 </div>
 
@@ -291,6 +343,7 @@
 </body>
 <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script>
 <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script src="js/fileinput.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 <script src="js/script.min.js" type="text/javascript"></script>
