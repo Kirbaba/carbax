@@ -106,3 +106,24 @@ $(document).ready(function () {
     });
     /*close add share fields validation*/
 });
+
+$(document).ready(function(){
+    $(function () {
+        $('#date-from').datepicker(
+            {
+                pickTime: false,
+                language: "ru",
+                orientation: "bottom left"
+            }
+        );
+    });
+    $(function () {
+        $('#date-to').datepicker(
+            {
+                pickTime: false,
+                language: "ru",
+                orientation: "bottom left"
+            }
+        );
+    });
+});
