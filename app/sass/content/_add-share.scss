@@ -100,8 +100,11 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    span {
+    .notice {
       color: $orange;
+    }
+    .notice-small{
+      text-transform: none;
     }
   }
   &__select {
@@ -308,6 +311,14 @@
         padding-top: 3px;
       }
     }
+    .city{
+      display: block;
+      position: relative;
+      width: 100%;
+      label {
+        padding-top: 3px;
+      }
+    }
     &--field {
       display: block;
       position: relative;
@@ -446,6 +457,21 @@
       color: #6a6969;
       font-family: $calibri;
       font-size: 14px;
+    }
+  }
+  &__city{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+  &__comments{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    .btn_orange {
+      margin: 21px 0px 20px auto;
     }
   }
 }

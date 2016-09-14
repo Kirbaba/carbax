@@ -24,7 +24,7 @@
 
                     <form action="" class="share__form">
 
-                        <h3 class="share__title">Выберите автомобиль из <span>гаража:</span></h3>
+                        <h3 class="share__title">Выберите автомобиль из <span class="notice">гаража:</span></h3>
 
                         <div class="share__inner">
 
@@ -180,7 +180,8 @@
 
                         <div class="share__code">
 
-                            <h3 class="share__title">Укажите номер детали (если знаете):</h3>
+                            <h3 class="share__title">Укажите номер детали <span
+                                    class="notice-small">(если знаете):</span></h3>
 
                             <input class="share__code--field" type="text" placeholder="Введите номер">
 
@@ -297,6 +298,26 @@
 
                         </div>
 
+                        <div class="share__city">
+
+                            <h3 class="share__title">Ваш регион: <span class="notice">Москва</span>. <span
+                                    class="notice-small">Добавить еще один:</span></span></h3>
+
+                            <input type="text" class="share__select" placeholder="Введите название города" required>
+                            <span class="share__arr"></span>
+
+                        </div>
+
+                        <div class="share__comments">
+
+                            <h3 class="share__title">Коментарии:</h3>
+
+                            <textarea class="share__about" name=""
+                                      placeholder="Введите всю дополнительную информацию"></textarea>
+
+                            <input class="btn btn_orange" type="submit" value="Отправит заявку">
+
+                        </div>
                     </form>
 
                 </div>
