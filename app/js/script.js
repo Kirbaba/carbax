@@ -104,6 +104,96 @@ $(document).ready(function () {
             $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
         }
     });
+
+    $('#vin').unbind().blur( function(){//валидация поля формы с буквами и пробелами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([A-Z0-9])+$/; // используем регулярное выражение для букв, цифр и символов
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
+    
+    $('#part').unbind().blur( function(){//валидация поля формы с буквами и пробелами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([a-zA-Zа-яА-Я0-9\D])+$/; // используем регулярное выражение для букв, цифр и символов
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
+    
+    $('#part-number').unbind().blur( function(){//валидация поля формы с буквами и пробелами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([a-zA-Zа-яА-Я0-9])+$/; // используем регулярное выражение для букв, цифр и символов
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
+
+    $('#ns').unbind().blur( function(){//валидация поля формы с буквами и пробелами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([a-zA-Zа-яА-Я\D])+$/; // используем регулярное выражение для букв и пробелов
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
+
+    $('#ph-number').unbind().blur( function(){//валидация поля формы с буквами и пробелами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([0-9])+$/; // используем регулярное выражение для цифр
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
+
+    $('#email').unbind().blur( function(){//валидация поля формы с буквами и пробелами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([a-zA-Zа-яА-Я0-9\s\D])+$/; // используем регулярное выражение для букв, цифр и символов
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });
     /*close add share fields validation*/
 });
 

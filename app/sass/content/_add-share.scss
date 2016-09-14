@@ -474,5 +474,17 @@
       margin: 21px 0px 20px auto;
     }
   }
+  &__contacts{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    .share__select{
+      margin-bottom: 11px;
+    }
+    .btn_orange {
+      margin: 21px 0px 20px auto;
+    }
+  }
 }
 
