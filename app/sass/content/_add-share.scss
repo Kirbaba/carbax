@@ -269,6 +269,8 @@
       line-height: 27px;
       @include transition(0.4s);
       margin-right: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       &:hover {
         border: 1px solid transparent;
         border-radius: 3px;
