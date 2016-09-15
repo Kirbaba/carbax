@@ -501,5 +501,32 @@
       margin: 21px 0px 20px auto;
     }
   }
+  &__school{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    .business-options__item--check+.business-options__item--forcheck .business-options__item--checked {
+      display: block;
+      float: left;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-top: 21px;
+      margin-bottom: 0px;
+      width: 17px;
+      height: 17px;
+      border: none;
+      border-radius: 50%;
+      background-color: #c6ccd2;
+      box-shadow: 0 1px 1px rgba(0,0,0,.12),inset 0 0 0 hsla(0,0%,100%,.11);
+      cursor: pointer;
+    }
+    .business-options__item--check:checked+.business-options__item--forcheck .business-options__item--checked {
+      background-color: #ff6b00;
+      background-image: url("../img/icons/checked.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
