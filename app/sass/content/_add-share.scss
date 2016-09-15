@@ -255,29 +255,42 @@
     justify-content: flex-start;
     width: 100%;
     float: left;
-    &--item {
-      display: block;
-      position: relative;
-      width: 20%;
-      height: 30px;
-      border: 1px solid #c6ccd2;
-      border-radius: 3px;
-      text-align: center;
-      color: #1b1b1b;
-      font-family: $calibri;
-      font-size: 16px;
-      line-height: 27px;
-      @include transition(0.4s);
-      margin-right: 20px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      &:hover {
-        border: 1px solid transparent;
-        border-radius: 3px;
-        background-color: $orange;
-        color: white;
-      }
-    }
+  }
+  &__check{
+    display: none;
+  }
+  &__check + .share__forcheck {
+    display: block;
+    position: relative;
+    width: 20%;
+    height: 30px;
+    float: left;
+    margin: 5px 0px;
+    margin-right: 20px;
+  }
+  &__check + .share__forcheck .share__checked {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c6ccd2;
+    border-radius: 3px;
+    color: #1b1b1b;
+    text-align: center;
+    font-size: 16px;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    line-height: 27px;
+    font-weight: 400;
+  }
+  &__check:checked + .share__forcheck .share__checked {
+    background-color: $orange;
+    color: white;
+  }
+  &__forcheck {
+    display: block;
+    position: relative;
+    /*width: 10%;*/
+    float: left;
   }
   &__container-select{
     display: flex;
