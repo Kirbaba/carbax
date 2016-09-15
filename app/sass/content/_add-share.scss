@@ -473,6 +473,20 @@
       font-family: $calibri;
       font-size: 14px;
     }
+    .share__container-select{
+      background-color: transparent;
+      margin: 0;
+      padding-left: 0;
+    }
+    .share__container-select .wheels-width label {
+      padding-top: 3px;
+    }
+    .share__container-select--field:before {
+      font-weight: 400;
+    }
+    .wheels-width{
+      width: 100%;
+    }
   }
   &__city{
     display: block;
@@ -526,6 +540,28 @@
       background-image: url("../img/icons/checked.png");
       background-size: cover;
       background-repeat: no-repeat;
+    }
+  }
+  &__length{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    float: left;
+    .share__code {
+      width: 50%;
+    }
+  }
+  &__wheels{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    float: left;
+    .share__code {
+      width: 30%;
     }
   }
 }
