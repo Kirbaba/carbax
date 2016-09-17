@@ -103,7 +103,7 @@
     .notice {
       color: $orange;
     }
-    .notice-small{
+    .notice-small {
       text-transform: none;
     }
   }
@@ -256,17 +256,18 @@
     width: 100%;
     float: left;
   }
-  &__check{
+  &__check {
     display: none;
   }
   &__check + .share__forcheck {
-    display: block;
+    flex: 1 0 10%;
     position: relative;
-    width: 20%;
-    height: 30px;
+    display: block;
     float: left;
-    margin: 5px 0px;
+    margin: 5px 0;
     margin-right: 20px;
+    /* width: 20%; */
+    height: 30px;
   }
   &__check + .share__forcheck .share__checked {
     position: relative;
@@ -278,7 +279,7 @@
     color: #1b1b1b;
     text-align: center;
     font-size: 16px;
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     line-height: 27px;
     font-weight: 400;
   }
@@ -292,7 +293,7 @@
     /*width: 10%;*/
     float: left;
   }
-  &__container-select{
+  &__container-select {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -305,12 +306,12 @@
     box-sizing: border-box;
     background-color: #e8e8e8;
     border-radius: 3px;
-    .mark{
+    .mark {
       display: block;
       position: relative;
       width: 39%;
     }
-    .model{
+    .model {
       display: block;
       position: relative;
       width: 39%;
@@ -318,15 +319,15 @@
         padding-top: 3px;
       }
     }
-    .year{
+    .year {
       display: block;
       position: relative;
       width: 20%;
-       label {
+      label {
         padding-top: 3px;
       }
     }
-    .city{
+    .city {
       display: block;
       position: relative;
       width: 100%;
@@ -440,7 +441,7 @@
       /*z-index: -1;*/
     }
   }
-  &__config{
+  &__config {
     display: block;
     position: relative;
     width: 100%;
@@ -451,16 +452,16 @@
       float: left;
       width: 30%;
     }
-    .business-options__item--check+.business-options__item--forcheck {
+    .business-options__item--check + .business-options__item--forcheck {
       width: 100%;
     }
   }
-  &__code{
+  &__code {
     display: block;
     position: relative;
     width: 50%;
     float: left;
-    &--field{
+    &--field {
       display: block;
       position: relative;
       width: 90%;
@@ -473,7 +474,7 @@
       font-family: $calibri;
       font-size: 14px;
     }
-    .share__container-select{
+    .share__container-select {
       background-color: transparent;
       margin: 0;
       padding-left: 0;
@@ -484,17 +485,17 @@
     .share__container-select--field:before {
       font-weight: 400;
     }
-    .wheels-width{
+    .wheels-width {
       width: 100%;
     }
   }
-  &__city{
+  &__city {
     display: block;
     position: relative;
     width: 100%;
     float: left;
   }
-  &__comments{
+  &__comments {
     display: block;
     position: relative;
     width: 100%;
@@ -503,24 +504,24 @@
       margin: 21px 0px 20px auto;
     }
   }
-  &__contacts{
+  &__contacts {
     display: block;
     position: relative;
     width: 100%;
     float: left;
-    .share__select{
+    .share__select {
       margin-bottom: 11px;
     }
     .btn_orange {
       margin: 21px 0px 20px auto;
     }
   }
-  &__school{
+  &__school {
     display: block;
     position: relative;
     width: 100%;
     float: left;
-    .business-options__item--check+.business-options__item--forcheck .business-options__item--checked {
+    .business-options__item--check + .business-options__item--forcheck .business-options__item--checked {
       display: block;
       float: left;
       margin-right: 10px;
@@ -532,17 +533,17 @@
       border: none;
       border-radius: 50%;
       background-color: #c6ccd2;
-      box-shadow: 0 1px 1px rgba(0,0,0,.12),inset 0 0 0 hsla(0,0%,100%,.11);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .12), inset 0 0 0 hsla(0, 0%, 100%, .11);
       cursor: pointer;
     }
-    .business-options__item--check:checked+.business-options__item--forcheck .business-options__item--checked {
+    .business-options__item--check:checked + .business-options__item--forcheck .business-options__item--checked {
       background-color: #ff6b00;
       background-image: url("../img/icons/checked.png");
       background-size: cover;
       background-repeat: no-repeat;
     }
   }
-  &__length{
+  &__length {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -553,7 +554,7 @@
       width: 50%;
     }
   }
-  &__wheels{
+  &__wheels {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
