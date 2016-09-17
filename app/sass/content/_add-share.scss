@@ -565,5 +565,139 @@
       width: 30%;
     }
   }
+  .driveInfoWr{
+    .mileage_sm {
+      display: block;
+      position: relative;
+      width: 50%;
+      float: left;
+      margin: 20px 0 20px 0;
+    }
+    .parag_text {
+      font-size: 15px;
+      font-family: $calibri;
+      color: rgb(27, 27, 27);
+      font-weight: 600;
+      text-align: left;
+    }
+    .mileage_sm input.mileage__next {
+      width: 336px;
+      border-color: rgb(208, 213, 218);
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 5px;
+      padding: 5px 0 5px 23px;
+      background-color: rgb(222, 222, 222);
+      box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 1, 0.47);
+      -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 1, 0.47);
+      -mox-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 1, 0.47);
+    }
+    .mileage_sm input.mileage__next--sm {
+      width: 86px;
+      border-color: rgb(208, 213, 218);
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 5px;
+      text-align: center;
+      padding: 5px 0 5px 0;
+      margin-right: 35px;
+      background-color: rgb(222, 222, 222);
+      box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 1, 0.47);
+      -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 1, 0.47);
+      -mox-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 1, 0.47);
+    }
+    .select_type__driver {
+      display: block;
+      position: relative;
+      width: 33%;
+      float: left;
+      margin-bottom: 10px;
+    }
+    .select_type__driver--sel {
+      width: 82%;
+      height: 30px;
+      max-height: 30px;
+      overflow: scroll;
+      border-radius: 3px / 4px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #fff;
+      outline-style: none;
+      border: 1px solid #C6CCD2;
+      padding: 0 0px 0 10px;
+      margin-bottom: 15px;
+      display: block;
+      float: left;
+    }
+  }
+  .save_plus--sm {
+    display: block;
+    position: relative;
+    float: left;
+    .add_infoDriver, .del_infoDriver {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: $calibri;
+      text-align: center;
+      border-color: rgb(208, 213, 218);
+      border-width: 1px;
+      border-style: solid;
+      color: #000000;
+      cursor: pointer;
+      line-height: 21px;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-color: #dedede;
+      border-radius: 3px;
+    }
+  }
+  .save_plus--sm--wr{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+  .parag_text_bold {
+    font-size: 16px;
+    font-family: $calibri;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 33px;
+  }
+  .select_type__driver {
+    display: block;
+    position: relative;
+    width: 33%;
+    float: left;
+    margin-bottom: 10px;
+    .parag_text {
+      font-size: 16px;
+      font-family: $calibri;
+      color: rgb(27, 27, 27);
+      font-weight: bold;
+      text-align: left;
+    }
+    .select_type__driver--sel {
+      width: 82%;
+      height: 30px;
+      max-height: 30px;
+      overflow: scroll;
+      border-radius: 3px / 4px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #fff;
+      outline-style: none;
+      border: 1px solid #C6CCD2;
+      padding: 0 0px 0 10px;
+      margin-bottom: 15px;
+      display: block;
+      float: left;
+    }
+  }
 }
 

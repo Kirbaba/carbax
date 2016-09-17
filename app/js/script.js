@@ -193,7 +193,21 @@ $(document).ready(function () {
         {
             $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
         }
-    });
+    });    
+    /*$('#date').unbind().blur( function(){//валидация поля формы с буквами и пробелами
+
+        var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
+        var rv_name = /^([0-9_.])+$/; // используем регулярное выражение для цифр и точек
+
+        if(val.length > 3 && val != '' && rv_name.test(val))// Eсли длина имени больше 2 символов, оно не пустое и удовлетворяет рег. выражению,
+        {
+            $(this).addClass('not_error').removeClass('error');// то добавляем этому полю класс .not_error и убираем класс error,
+        }
+        else
+        {
+            $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
+        }
+    });*/
     /*close add share fields validation*/
 });
 
