@@ -6,6 +6,99 @@
   background-color: #272727;
 }
 
+.business-form{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.business-menu {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #272727;
+  &__img {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 27px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.5;
+    }
+  }
+  &__line {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    float: left;
+    opacity: 0.4;
+    background-color: #181818;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.09);
+  }
+  &__check {
+    display: none;
+  }
+  &__check + .business-menu__forcheck {
+    position: relative;
+    display: block;
+    width: 16.66%;
+    float: left;
+    height: 113px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  &__check + .business-menu__forcheck .business-menu__checked {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #818181;
+    text-align: center;
+    font-size: 16px;
+    font-family: $calibri;
+    line-height: 27px;
+    font-weight: 300;
+    overflow: hidden;
+  }
+  &__check:checked + .business-menu__forcheck .business-menu__checked {
+    background-color: transparent;
+    color: white;
+  }
+  &__check:checked + .business-menu__forcheck .business-menu__checked {
+    .business-menu__img {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  &__forcheck {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    float: left;
+  }
+  &__forcheck:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 228px;
+    opacity: 0.4;
+    background-color: #181818;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.09);
+  }
+}
+
 .business-categorie {
   display: block;
   position: relative;
@@ -92,6 +185,7 @@
   width: 100%;
   float: left;
   &__fields {
+    display: block;
     position: relative;
     width: 100%;
     float: left;
@@ -324,14 +418,14 @@
       /*width: 10%;*/
       float: left;
     }
-    &--img{
+    &--img {
       display: block;
       position: relative;
       width: 205px;
       height: 46px;
       float: left;
       overflow: hidden;
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -593,13 +687,14 @@
       background-size: cover;
       background-color: transparent;
     }
-    &--send{
+    &--send {
       display: block;
       position: relative;
       width: 187px;
       height: 35px;
-      float: left;
+      float: none;
       background-color: #ff6b00;
+      border: none;
       border-radius: 2px;
       text-align: center;
       color: white;
@@ -609,10 +704,21 @@
       text-transform: uppercase;
       line-height: 30px;
       margin-top: 80px;
+      margin-bottom: 23px;
       @include transition(0.4s);
-      &:hover{
+      &:hover {
         background-color: #cc5600;
       }
+    }
+  }
+  &__enter{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    background-color: #cecece;
+    .business-footer__contacts--field{
+      margin-right: 70px;
     }
   }
 }
