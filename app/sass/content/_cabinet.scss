@@ -40,6 +40,22 @@
   position: relative;
   width: 100%;
   float: left;
+  .share__title{
+    margin-top: 0;
+  }
+  .single-business-title{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    color: #fa6400;
+    font-family: $calibri;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
   &--head{
     display: block;
     position: relative;
@@ -66,7 +82,7 @@
     float: left;
     background-color: #272727;
     color: #fff;
-    &:before{
+    /*&:before{
       content: "";
       display: block;
       position: absolute;
@@ -76,7 +92,7 @@
       content: "";
       margin-top: 29px;
       margin-left: 164px;
-    }
+    }*/
   }
   &--title{
     display: block;
@@ -88,6 +104,7 @@
     text-transform: uppercase;
     padding-right: 16px;
     background-color: #fff;
+    margin-bottom: 20px;
   }
   &--subtitle{
     display: block;
@@ -102,6 +119,66 @@
       font-size: 14px;
       font-style: italic;
     }
+  }
+  &--descr{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    color: #272727;
+    font-size: 14px;
+    font-family: $calibri;
+    font-weight: 300;
+  }
+}
+.cabinet__address{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 25px;
+  &--name{
+    flex: 0 0 30%;
+    color: #282828;
+    font-family: $calibri;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &--content{
+    flex: 0 0 70%;
+    color: #282828;
+    font-family: $calibri;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    span{
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  &--left{
+     display: flex;
+     flex: 0 0 20%;
+     flex-wrap: wrap;
+     flex-direction: row;
+   }
+  &--left{
+    display: flex;
+    flex: 0 0 30%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .cabinet__address--content:last-of-type{
+      font-style: italic;
+    }
+  }
+  &--right{
+    display: flex;
+    flex: 0 0 70%;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 .cabinet__registration{
