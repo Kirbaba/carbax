@@ -735,7 +735,7 @@
 			background-color: $orange;
 			color: #FFF;
 			font-size: 16px;
-			z-index: 99;
+			z-index: 1;
 			-webkit-clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 100%);
 			  -moz-clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 100%);
 			  -ms-clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 100%);
@@ -843,7 +843,7 @@
 						left: -30px;
 						border-top: 30px solid $orange;
 						border-left: 30px solid transparent;
-						z-index: 9999;
+						z-index: 1;
 						
 					}				
 					p {

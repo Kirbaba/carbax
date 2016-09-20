@@ -528,6 +528,40 @@
     font-size: 14px;
     font-weight: 300;
   }
+  .cabinet__payment{
+    width: 100%;
+    margin: 0;
+    margin-top: 21px;
+    margin-bottom: 11px;
+  }
+  &--car-type{
+    display: block;
+    position: relative;
+    width: 145px;
+    height: 70px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.cabinet__more{
+  display: block;
+  position: relative;
+  width: auto;
+  float: right;
+  color: $orange;
+  font-family: $calibri;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 16px;
+  @include transition(0.4s);
+  &:hover{
+    color: #cc5600;
+  }
 }
 /*
 @keyframes scale {
