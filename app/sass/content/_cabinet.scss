@@ -563,6 +563,113 @@
     color: #cc5600;
   }
 }
+.cabinet__comment{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+  &--avatar{
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &--content{
+    display: block;
+    position: relative;
+    width: calc(100% - 70px);
+    float: left;
+    .share__title{
+      margin-top: 0px;
+    }
+    p{
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      color: #999;
+      font-family: $calibri;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 16px 0px;
+    }
+  }
+  &--rating{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 20px;
+    float: left;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &--date{
+    display: block;
+    position: relative;
+    float: left;
+    color: #1a1a1a;
+    font-family: $calibri;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
+  }
+  &--answer{
+    display: block;
+    position: relative;
+    float: left;
+    color: $orange;
+    font-family: $calibri;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include transition(0.4s);
+    &:hover{
+      color: #cc5600;
+    }
+  }
+  &--form{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+    .share__about{
+      border-radius: 0px;
+    }
+    .btn {
+      display: block;
+      float: right;
+      color: white;
+      font-family: $calibri;
+      font-size: 18px;
+      font-weight: 300;
+      margin-top: 24px;
+      border-radius: 17px;
+    }
+  }
+}
+.answer{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 100px;
+}
 /*
 @keyframes scale {
   0% {transform: scale(1);}
