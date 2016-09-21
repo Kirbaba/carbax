@@ -50,6 +50,25 @@ $(document).ready(function () {
     };
     /*close business yandex map*/
 
+    /*rating map*/
+    if ($('#ratingMap').length > 0) {//проверяет наличие блока на странице
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('ratingMap', {
+                center: [55.75396, 37.620393],
+                zoom: 10
+            });
+            /*myMap.controls.add('smallZoomControl');
+            myMap.controls.add('searchControl');*/
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: myajax.img + 'img/marker.png',
+                balloonContent: 'Это красивая метка'
+            }, {});
+
+            myMap.geoObjects.add(myPlacemark);
+        });
+    };
+    /*close rating map*/
+
     /*market tabs*/
     $('.page__tabs_target').click(function (event) {
         $('.page__tabs_target').removeClass('active');//при клике на нужный элемент удаляем у соседних класс 'active'
