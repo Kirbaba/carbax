@@ -1,0 +1,136 @@
+.question__search{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 25px;
+}
+.question__select{
+  display: block;
+  position: relative;
+  width: 130px;
+  float: left;
+  color: $orange;
+  font-family: $calibri;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 18px;
+  margin-left: -10px;
+  border: none;
+  background-color: transparent;
+}
+.questions__content{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  .nav-tabs {
+     border-bottom: none;
+    li.active{
+      a{
+        color: #ff6b00;
+        font-family: $calibri;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: underline;
+        border: none;
+        &:hover{
+          background-color: #fff;
+        }
+      }
+    }
+    li{
+      a{
+        color: #272727;
+        font-family: $calibri;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border: none;
+        &:hover{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  .btn {
+    display: block;
+    position: relative;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: $calibri;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+.questions__item{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #c6c6c6;
+  padding: 16px 0px;
+  box-sizing: border-box;
+  &:last-of-type{
+    margin-bottom: 20px;
+  }
+  &--avatar{
+    display: block;
+    position: relative;
+    width: 50px;
+    float: left;
+  }
+  &--img{
+    display: block;
+    position: relative;
+    width: 37px;
+    height: 37px;
+    background-color: #626262;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &--content{
+    display: block;
+    position: relative;
+    width: calc(100% - 50px);
+    float: left;
+    p{
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      font-family: $calibri;
+      color: #0317b2;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+    a{
+      font-family: $calibri;
+      color: #272727;
+      font-size: 14px;
+      font-weight: 400;
+      img{
+        display: block;
+        position: relative;
+        float: left;
+        margin-right: 5px;
+      }
+    }
+  }
+  &--sign{
+    display: block;
+    position: relative;
+    float: left;
+    font-family: $calibri;
+    color: #272727;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 35px;
+  }
+}
