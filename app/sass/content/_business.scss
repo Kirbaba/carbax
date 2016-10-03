@@ -19,6 +19,7 @@
   width: 100%;
   float: left;
   background-color: #272727;
+  overflow: hidden;
   &__img {
     display: block;
     position: relative;
@@ -243,6 +244,7 @@
     height: 250px;
     float: left;
     overflow: hidden;
+    margin: 25px 0px;
     #businessMap {
       display: block;
       position: relative;
@@ -297,6 +299,17 @@
     float: left;
     opacity: 0;
     z-index: 2;
+  }
+  .share__main {
+    position: relative;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .btn-primary{
+    background-color: $orange;
+    border-color: $orange;
   }
 }
 
@@ -358,19 +371,22 @@
   &__time {
     display: block;
     position: relative;
-    width: 50%;
+    width: 100%;
     float: left;
+    .business-options__item{
+      width: 100%;
+    }
   }
   &__comfort {
     display: block;
     position: relative;
-    width: 50%;
+    width: 100%;
     float: left;
   }
   &__item {
     display: block;
     position: relative;
-    width: 100%;
+    width: 50%;
     float: left;
     &--fields {
       display: block;
@@ -394,8 +410,8 @@
     }
     &--check + .business-options__item--forcheck .business-options__item--checked {
       display: block;
-      width: 13px;
-      height: 13px;
+      width: 18px;
+      height: 18px;
       border: none;
       border-radius: 50%;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 0 0 rgba(255, 255, 255, 0.11);
@@ -403,7 +419,7 @@
       background-color: #c6ccd2;
       cursor: pointer;
       margin-right: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 7px;
     }
     &--check:checked + .business-options__item--forcheck .business-options__item--checked {
       background-image: url('../img/icons/checked.png');
@@ -468,8 +484,31 @@
         color: #383838;
         font-family: $calibri;
         font-size: 16px;
-        line-height: 10px;
+        line-height: 28px;
       }
+    }
+  }
+  &__credit {
+    display: block;
+    position: relative;
+    width: 30%;
+    float: left;
+    h3 {
+      width: 100%;
+    }
+    .business-options__item {
+      width: 100%;
+    }
+  }
+  &__services{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    float: left;
+    .business-options__item{
+      width: 100%;
     }
   }
 }
