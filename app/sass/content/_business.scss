@@ -518,7 +518,7 @@
   position: relative;
   width: 100%;
   float: left;
-  border-top: 5px solid $orange;
+  /*border-top: 5px solid $orange;*/
   &__title {
     display: block;
     position: relative;
@@ -573,8 +573,8 @@
     }
     &--check + .business-cars__type--forcheck .business-cars__type--checked {
       display: block;
-      width: 13px;
-      height: 13px;
+      width: 18px;
+      height: 18px;
       border: none;
       border-radius: 50%;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 0 0 rgba(255, 255, 255, 0.11);
